@@ -46,6 +46,7 @@ app.use(session({
     secure: false,
     maxAge: 60 * 1000,
   },
+  rolling: true, // 활동할때마다 세션 유지시간 초기화. saveUninitialiezed: true 여야 rolling 유효
 }));
 app.use(passport.initialize()); // 반드시 session 밑에 존재해야함, req.user, req.login, req.isAuthenticate, req.logout
 app.use(passport.session()); //session으로 저장 되면서 connect.sid 라는 이름으로 세션 쿠키가 브라우저로 전송 -> 로그인이 완료됨
