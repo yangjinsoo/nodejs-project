@@ -1,2 +1,2 @@
 # nodejs-project
-- node.js 공부용 프로젝트
+- node.js 공부용 SNS 프로젝트
